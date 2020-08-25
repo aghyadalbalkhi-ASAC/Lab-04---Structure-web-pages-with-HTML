@@ -11,7 +11,7 @@ function myFunction() {
    customerName = prompt("Please Enter Your Name");
    address = prompt("Please Enter Your Address");
    phone = prompt("Please Enter Your Phone");
-   order = prompt("Please Enter Your choice form list bleow /n 1 - Food Time  /n 2- Damsucs Food 3- Hut Food");
+   order = prompt("Please Enter Your choice choice the number form list bleow /n 1 - Food Time  /n 2- Damsucs Food 3- Hut Food");
 
    if (order==1){
 
