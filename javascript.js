@@ -22,7 +22,6 @@ function myFunction() {
     pagelink=' https://randalsallaq.github.io/restaurant-04/';
     pagename='Hut Food';
    }
-
    else {
 
     pagelink='https://aghyadalbalkhi-asac.github.io/Lab-04---Structure-web-pages-with-HTML/';
@@ -32,7 +31,6 @@ console.log(pagelink);
 
 document.getElementById("IDOFELEMENT").href = pagelink;
 document.getElementById("IDOFELEMENT").innerText=pagename;
-
 document.getElementById("orderContent").innerHTML="Your Name is "+customerName+"  and Your Address is : "+address+" your Phone is "+phone;
 
   }
