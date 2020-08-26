@@ -76,16 +76,23 @@ document.getElementById("orderContent").innerHTML="Your Name is "+customerName+"
 //////////////////////////////////////////////////////////////////////////////
 
   function GiveGift(){
-     
+
    alert('we make a special offer to our visitor \n guess a number less than 10 and you will get free order from our site\n You only have three attempts');
 
+   var store;
    for(var i=1;i<=3;i++){
 
       var userin = prompt('Please Enter '+i+' Attempt');
-
+      
+      if (userin == 0){
+         store = userin;
+      }
    }
 
-   if(userin !=0){
+
+
+
+   if(store !=0){
 
       alert('Dont Worry we have up coming offers ^_^')
 
@@ -95,5 +102,11 @@ document.getElementById("orderContent").innerHTML="Your Name is "+customerName+"
       alert('Your answer is correct and you won a free order ^_^')
    }
 
+
+  }
+
+  function NumValid(input){
+
+   return !isNaN(input);
 
   }
