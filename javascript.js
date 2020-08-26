@@ -22,6 +22,7 @@ function myFunction() {
    
    address = prompt("Please Enter Your Address");
    phone = prompt("Please Enter Your Phone");
+
    order = prompt("Please Enter Your choice the number form list bleow  1 - Food Time  2- Damsucs Food 3- Hut Food");
   
    //Order Validtion 
@@ -29,6 +30,7 @@ function myFunction() {
       alert("order Must be a Number");  
       order = prompt("Please Enter Number of Order");
    
+
    if (order==1){
 
     pagelink='https://joudi12.github.io/lab04/';
