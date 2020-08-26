@@ -5,7 +5,7 @@ var phone;
 var order;
 var pagelink;
 var pagename;
-
+var giftmes;
 
 
 ////////////////////////////////////////////////////////////////
@@ -29,6 +29,7 @@ GiveGift();
 /////// Print The Name In the Top Of Page 
 
 document.write('<h2> Weclome '+customerName+' </h2>');
+document.write('<h3 id ="itemh3"> '+giftmes+' </h3>');
    
 ////////////////////////////////////////////////////////////////
 
@@ -98,12 +99,13 @@ document.getElementById("orderContent").innerHTML="Your Name is "+customerName+"
 
    if(store !=0){
 
-      alert('Dont Worry we have up coming offers ^_^')
-
+      alert('Dont Worry we have up coming offers ^_^');
+      giftmes = customerName+' Be Smile ^_^ You are Not Loser ';
 
    } else {
 
-      alert('Your answer is correct and you won a free order ^_^')
+      alert('Your answer is correct and you won a free order ^_^');
+      giftmes = customerName+' You Can Contact Us To Get Your Free Ourder';
    }
 
 
