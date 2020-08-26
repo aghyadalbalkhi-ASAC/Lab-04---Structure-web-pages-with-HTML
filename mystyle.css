@@ -13,12 +13,22 @@ h1 {
     display: inline;
     margin: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
  }
 
  h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:#AD1457;
  }
+
+ h2{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color:#14ad8c;
+   text-align: center;
+   border:1px #14ad8c solid;
+  
+
+}
 
  p{
     display: inline-block;
