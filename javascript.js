@@ -7,15 +7,31 @@ var pagelink;
 var pagename;
 
 
-//Name Validtion 
-if (customerName==null || customerName==""){
-   alert("Name can't be blank");  
-   customerName = prompt("Please Enter Your Name");
-}
 
-// Print The Name In the Top Of Page 
+////////////////////////////////////////////////////////////////
+//Name Validtion using While loop and IsNaN
+
+      while(customerName==null || customerName=="" || !isNaN(customerName)){
+         alert("Name can't be blank");  
+         customerName = prompt("Please Enter Your Name");
+      }
+
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+// Gift For Vistor by guess The number less than 10 to get free order
+//call function 
+
+GiveGift();
+
+////////////////////////////////////////////////////////////////
+
+/////// Print The Name In the Top Of Page 
+
 document.write('<h2> Weclome '+customerName+' </h2>');
    
+////////////////////////////////////////////////////////////////
+
 
 function myFunction() { 
     
@@ -52,5 +68,32 @@ console.log(pagelink);
 document.getElementById("IDOFELEMENT").href = pagelink;
 document.getElementById("IDOFELEMENT").innerText=pagename;
 document.getElementById("orderContent").innerHTML="Your Name is "+customerName+"  and Your Address is : "+address+" your Phone is "+phone;
+
+  }
+
+
+// This Function Ask uset to Enter 3 Number and give his a gift if he guess 
+//////////////////////////////////////////////////////////////////////////////
+
+  function GiveGift(){
+     
+   alert('we make a special offer to our visitor \n guess a number less than 10 and you will get free order from our site\n You only have three attempts');
+
+   for(var i=1;i<=3;i++){
+
+      var userin = prompt('Please Enter '+i+' Attempt');
+
+   }
+
+   if(userin !=0){
+
+      alert('Dont Worry we have up coming offers ^_^')
+
+
+   } else {
+
+      alert('Your answer is correct and you won a free order ^_^')
+   }
+
 
   }
