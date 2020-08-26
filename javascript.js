@@ -83,7 +83,11 @@ document.getElementById("orderContent").innerHTML="Your Name is "+customerName+"
    for(var i=1;i<=3;i++){
 
       var userin = prompt('Please Enter '+i+' Attempt');
-      
+      if (isNaN(userin)){
+         alert('plz Enter a Number');
+         userin = prompt('Please Enter '+i+' Attempt');
+
+      }
       if (userin == 0){
          store = userin;
       }
